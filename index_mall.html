@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  02Signal – Kodulehe STARTER template (fallback / turvavõrk)
+  ============================================================
+  Kui AI-ga kodulehe tegemine takerdub, kopeeri SEE fail oma GitHubi
+  repo'sse nimega index.html ja muuda ainult [NURKSULGUDES] kohti.
+  Cloudflare Pages avaldab selle automaatselt (G3 leht 5). Ei mingit koodioskust vaja.
+
+  MUUDA JÄRGMISED KOHAD (otsi [ ] märke):
+   1. [SINU ETTEVÕTE]     – ettevõtte / sinu nimi
+   2. [SINU LÖÖKLAUSE]    – üks lause, mida sa pakud
+   3. Teenuste kolm kaarti – pealkiri + lause
+   4. [SINU@EMAIL.EE]     – sinu e-post (kontaktinupp)
+
+  KONTAKTIVORMI UUENDUS (pärast N3 / edasijõudnutele):
+   Asenda allpool <a href="mailto:..."> nupp oma n8n Form Trigger lingiga,
+   siis kontakt läheb n8n → Telegram. Otsi kommentaari "N8N-VORMI KOHT".
+-->
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO/GEO: pealkiri ja kirjeldus aitavad Google'il ja AI-l sind leida -->
+  <title>[SINU ETTEVÕTE] – [SINU LÖÖKLAUSE]</title>
+  <meta name="description" content="[SINU ETTEVÕTE] – kirjuta siia 1-2 lauset, mida sa pakud ja kellele." />
+  <style>
+    :root { --teal: #009B8D; --navy: #1A1A2E; --gray: #6B7280; --bg: #F3F4F6; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+           color: var(--navy); line-height: 1.6; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { background: var(--navy); color: #fff; padding: 72px 0; text-align: center; }
+    header h1 { font-size: 2.4rem; margin-bottom: 12px; }
+    header p { font-size: 1.2rem; color: #cbd5e1; }
+    section { padding: 56px 0; }
+    h2 { color: var(--teal); font-size: 1.6rem; margin-bottom: 20px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: var(--bg); border-radius: 12px; padding: 24px; }
+    .card h3 { color: var(--navy); margin-bottom: 8px; }
+    .card p { color: var(--gray); }
+    .contact { background: var(--bg); text-align: center; }
+    .btn { display: inline-block; background: var(--teal); color: #fff; text-decoration: none;
+           padding: 14px 28px; border-radius: 8px; font-weight: 600; margin-top: 12px; }
+    footer { text-align: center; color: var(--gray); padding: 32px 0; font-size: 0.9rem; }
+    img { max-width: 100%; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <h1>[SINU ETTEVÕTE]</h1>
+      <p>[SINU LÖÖKLAUSE – nt "Käsitöö tekstiil, mis jutustab lugu"]</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Kes me oleme</h2>
+      <p>Kirjuta siia 2–3 lauset: mida sa teed, kellele ja miks see väärtuslik on.
+         Räägi lihtsalt ja ausalt – nii nagu kliendile näost näkku.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Mida me pakume</h2>
+      <div class="cards">
+        <div class="card"><h3>Teenus 1</h3><p>Üks lause selle kohta.</p></div>
+        <div class="card"><h3>Teenus 2</h3><p>Üks lause selle kohta.</p></div>
+        <div class="card"><h3>Teenus 3</h3><p>Üks lause selle kohta.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <h2>Võta ühendust</h2>
+      <p>Kirjuta meile ja räägime, kuidas saame aidata.</p>
+      <!-- N8N-VORMI KOHT:
+           SHU / kohe töötav variant = mailto nupp allpool.
+           Edasijõudnud / pärast N3: asenda href oma n8n Form Trigger lingiga,
+           nt: <a class="btn" href="https://n8n.02signal.com/form/SINU-VORM">Saada päring</a>
+           siis kontakt läheb n8n → Telegram. -->
+      <a class="btn" href="mailto:[SINU@EMAIL.EE]">Saada e-kiri</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 [SINU ETTEVÕTE] · Loodud 02Signal programmis · GitHub + Vercel
+    </div>
+  </footer>
+
+</body>
+</html>
